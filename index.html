@@ -11,37 +11,68 @@
 
 </head>
 <body class="bg-gray-100 text-gray-800">
-  <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <!-- Logo + Site Name -->
-      <div class="flex items-center space-x-2">
-        <img src="images/Alam.png" alt="Logo" class="h-10 w-10">
-        <span class="text-2xl font-bold text-indigo-600">আলম আয়াত</span>
+  <body>
+    <!-- Navbar -->
+    <header class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <img src="images/Alam.png" alt="Logo" class="h-10 w-10">
+          <span class="text-xl font-bold text-indigo-700">আলম আয়াত</span>
+        </div>
+        <!-- Nav links -->
+        <nav class="space-x-6">
+          <a href="#books" class="text-gray-700 hover:text-indigo-700">বই</a>
+          <a href="#blog" class="text-gray-700 hover:text-indigo-700">ব্লগ</a>
+          <a href="#about" class="text-gray-700 hover:text-indigo-700">সম্পর্কে</a>
+        </nav>
       </div>
+    </header>
   
-      <!-- Navigation -->
-      <nav class="space-x-4">
-        <a href="#books" class="text-gray-700 hover:text-indigo-600">বই</a>
-        <a href="#blogs" class="text-gray-700 hover:text-indigo-600">ব্লগ</a>
-        <a href="#about" class="text-gray-700 hover:text-indigo-600">সম্পর্কে</a>
-      </nav>
-    </div>
-  </header>
+    <!-- Banner -->
+    <section class="w-full bg-gray-100">
+      <div class="max-w-7xl mx-auto">
+        <img src="images/banner.webp" alt="Welcome Banner" class="w-full h-auto rounded-lg shadow-md">
+      </div>
+    </section>  
+  <!-- Books Section -->
+  <section id="books" class="py-12 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">বই সমূহ</h2>
   
-  <!-- Hero Section -->
-  <section class="bg-indigo-600 text-white py-20">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">চিন্তা, লেখা ও অনুপ্রেরণা</h2>
-      <p class="text-lg md:text-xl">এখানে পাবেন বই, ব্লগ আর অনুপ্রেরণার গল্প।</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+  
+        <!-- Book 1 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="images/book1.jpg" alt="Book 1" class="w-full h-64 object-cover">
+          <div class="p-4 flex justify-between">
+            <a href="books/book1.pdf" target="_blank" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">বই পড়ুন</a>
+            <a href="books/book1.pdf" download class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">ডাউনলোড করুন</a>
+          </div>
+        </div>
+  
+        <!-- Book 2 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="images/book2.jpg" alt="Book 2" class="w-full h-64 object-cover">
+          <div class="p-4 flex justify-between">
+            <a href="books/book2.pdf" target="_blank" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">বই পড়ুন</a>
+            <a href="books/book2.pdf" download class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">ডাউনলোড করুন</a>
+          </div>
+        </div>
+  
+        <!-- Book 3 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="images/book3.jpg" alt="Book 3" class="w-full h-64 object-cover">
+          <div class="p-4 flex justify-between">
+            <a href="books/book3.pdf" target="_blank" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">বই পড়ুন</a>
+            <a href="books/book3.pdf" download class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">ডাউনলোড করুন</a>
+          </div>
+        </div>
+  
+      </div>
     </div>
   </section>
-
-  <!-- Books Section -->
-  <section id="books" class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="text-3xl font-bold mb-8 text-center text-indigo-700">বইসমূহ</h2>
-    <div id="book-list" class="grid gap-6 md:grid-cols-3"></div>
-      </section>
+  
 
   <!-- Blogs Section -->
   <section id="blogs" class="bg-gray-50 py-16">
