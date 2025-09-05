@@ -1,12 +1,23 @@
-
-h1 {
-    color: rgb(67, 35, 246);
-    transition: 0.5s;
-    font-size: 50px;
+body {
     text-align: center;
-}
-h1.active {
-    color: rgb(255, 120, 2);
-    transform: scale(1.3);
-}
-
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    color: #333;
+    transition: color 0.5s;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.5s;
+  }
+  
