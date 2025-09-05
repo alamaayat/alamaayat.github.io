@@ -1,1 +1,12 @@
 
+h1 {
+    color: rgb(67, 35, 246);
+    transition: 0.5s;
+    font-size: 50px;
+    text-align: center;
+}
+h1.active {
+    color: rgb(255, 120, 2);
+    transform: scale(1.3);
+}
+
