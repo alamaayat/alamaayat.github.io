@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    margin-top: 100px;
+    padding: 50px;
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
   }
@@ -8,11 +8,17 @@ body {
   h1 {
     color: #333;
     transition: color 0.5s;
+    cursor: pointer;
+  }
+  h2 {
+    color: #555;
+    font-size: 18px;
+    transition: font-size 0.3s;
   }
   
   button {
     padding: 15px 30px;
-    font-size: 18px;
+    margin-top: 20px;
     cursor: pointer;
     background-color: #3498db;
     color: white;
@@ -20,4 +26,6 @@ body {
     border-radius: 8px;
     transition: background-color 0.5s;
   }
-  
+  button:hover {
+    background-color: #3498db;
+  }
